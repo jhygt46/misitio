@@ -38,7 +38,7 @@
                                 <h3>Ingresa tu Correo</h3>
                                 <div class="input"><input type="text" name="correo" placeholder="izusushi@gmail.com"></div>
                                 <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
-                                <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" onclick="send()" /><div class="mes_gratis">30 dias gratis</div></div>
+                                <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" onsubmit="send()" /><div class="mes_gratis">30 dias gratis</div></div>
                             </form>
                         </div>
                     </div>
