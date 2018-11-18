@@ -2,6 +2,7 @@
 <head>
     <title>FireApp</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/anime.min.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
@@ -12,6 +13,14 @@
             font-family: 'Pattaya', sans-serif;
         }
     </style>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lf3gXsUAAAAABI4s4kWAcK2abf0X5uXQnRdHWVB', {action: 'action_name'})
+            .then(function(token) {
+                console.log(token);
+            });
+        });
+</script>
 </head>
 <body>
     <div class="contenedor">
@@ -34,6 +43,7 @@
                             <div class="input"><input type="text" id="dominio" placeholder="www.izusushi.cl"></div>
                             <h3>Ingresa tu Correo</h3>
                             <div class="input"><input type="text" id="correo" placeholder="izusushi@gmail.com"></div>
+                            <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
                             <div class="acciones"><div class="empezar" onclick="send()">Empezar Prueba Gratis</div><div class="mes_gratis">30 dias gratis</div></div>
                         </div>
                     </div>
@@ -78,6 +88,7 @@
         <div class="valign telefono">
             <div class="iframe"><iframe id="telefono" src="http://www.mikasushi.cl" width="274" height="486" frameborder="0"></iframe></div>
         </div>
-    </div>  
+    </div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
