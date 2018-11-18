@@ -67,14 +67,22 @@ function proximo_cliente(){
 function iframe(src){
     $('#telefono').attr('src', 'http://'+src);
 }
+function validar_email(email){
+    var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email) ? true : false;
+}
 function send(){
 
-    var dominio = $("input[name*='dominio']").val();
+    var dominio = $("input[name*='dominio']").val().split(".");
     var correo = $("input[name*='correo']").val();
     
-    console.log(dominio);
-    console.log(correo);
-    event.preventDefault();
+    if(validar_email(correo)){
+        if(dominio[0] == "www" && dominio.length == 3 && strlen(dominio[1]) > 0 && strlen(dominio[2]) > 1){
+
+            return true;
+
+        }
+    }
     
     return false;
     
