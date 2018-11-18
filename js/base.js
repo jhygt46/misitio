@@ -69,8 +69,8 @@ function iframe(src){
 }
 function send(){
 
-    var dominio = $("input[name='dominio']").val();
-    var correo = $("input[name='correo']").val();
+    var dominio = $("input[name*='dominio']").val();
+    var correo = $("input[name*='correo']").val();
     
     console.log(dominio);
     console.log(correo);
