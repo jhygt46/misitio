@@ -69,27 +69,13 @@ function iframe(src){
 }
 function send(){
 
-    var send = { accion: 'crear_dominio', dominio: $('#dominio').val(), correo: $('#correo').val() };
-    $.ajax({
-        url: "http://35.185.64.95/ajax/index.php",
-        type: "POST",
-        data: send,
-        success: function(info){
-            var data = JSON.parse(info);
-            console.log(data);
-            if(data.op == 1){
-                //$('#dominio').val("");
-                //$('#correo').val("");
-                $('#mensaje').html("Felicitaciones! Ya eres parte de Delivery Shop. Te hemos enviado un correo con las instrucciones")
-            }
-            if(data.op == 2){
-                console.log("ERROR");
-                console.log(data.mensaje);
-            }
-        }, error: function(e){
-            console.log(e);
-        }
-    });
+    var dominio = $("input[name='dominio']").val();
+    var correo = $("input[name='correo']").val();
+    
+    console.log(dominio);
+    console.log(correo);
+    
+    return false;
     
 }
 function a(){
