@@ -116,6 +116,9 @@ body{
 .contenedor .info .data .paginas .pagina .infos .input{
     width: 100%;
 }
+.contenedor .info .data .paginas .pagina .infos .g-recaptcha{
+    margin-top: 10px;
+}
 .contenedor .info .data .paginas .pagina .infos .input input{
     width: 45%;
     height: 44px;

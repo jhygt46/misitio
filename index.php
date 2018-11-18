@@ -13,14 +13,6 @@
             font-family: 'Pattaya', sans-serif;
         }
     </style>
-    <script>
-        grecaptcha.ready(function() {
-            grecaptcha.execute('6Lf3gXsUAAAAABI4s4kWAcK2abf0X5uXQnRdHWVB', {action: 'action_name'})
-            .then(function(token) {
-                console.log(token);
-            });
-        });
-</script>
 </head>
 <body>
     <div class="contenedor">
