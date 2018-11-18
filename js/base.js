@@ -76,6 +76,11 @@ function send(){
     var dominio = $("input[name*='dominio']").val().split(".");
     var correo = $("input[name*='correo']").val();
     
+    console.log(dominio);
+    console.log(correo);
+    
+    return false;
+    
     if(validar_email(correo)){
         if(dominio[0] == "www" && dominio.length == 3 && strlen(dominio[1]) > 0 && strlen(dominio[2]) > 1){
 
@@ -84,7 +89,7 @@ function send(){
         }
     }
     
-    return false;
+    
     
 }
 function a(){
