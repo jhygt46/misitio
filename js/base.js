@@ -79,7 +79,7 @@ function send(){
     if(validar_email(correo)){
         if(dominio[0] == "www" && dominio.length == 3 && strlen(dominio[1]) > 0 && strlen(dominio[2]) > 1){
 
-            return true;
+            
 
         }
     }
