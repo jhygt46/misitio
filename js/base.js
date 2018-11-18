@@ -67,7 +67,7 @@ function proximo_cliente(){
 function iframe(src){
     $('#telefono').attr('src', 'http://'+src);
 }
-function send(event){
+function send(){
 
     var dominio = $("input[name*='dominio']").val();
     var correo = $("input[name*='correo']").val();
