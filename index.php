@@ -17,7 +17,7 @@
     <div class="contenedor">
         <div class="valign info">
             <div class="titulo">
-                <div class="logo valign">Delivery-Shop.cl</div>
+                <div class="logo valign">MiSitioDelivery.cl</div>
                 <ul class="btns valign clearfix">
                     <li onclick="pagina(0)">Empezar</li>
                     <li onclick="pagina(1)">Clientes</li>
