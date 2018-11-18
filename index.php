@@ -29,7 +29,7 @@
                 <div class="paginas pag01">
                     <div class="pagina">
                         <div class="infos inp1 valign">
-                            <form action="http://35.185.64.95/ajax/index.php" method="post">
+                            <form action="/crear_nuevo.php" method="post">
                                 <h1>Crear tu Sitio Web para Delivery Ahora Mismo!</h1>
                                 <h2>Solo debes seguir estos simples pasos</h2>
                                 <h3>Ingresa tu Dominio</h3>
@@ -38,7 +38,7 @@
                                 <h3>Ingresa tu Correo</h3>
                                 <div class="input"><input type="text" name="correo" placeholder="izusushi@gmail.com"></div>
                                 <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
-                                <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" onsubmit="send(e)" /><div class="mes_gratis">30 dias gratis</div></div>
+                                <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" onsubmit="" /><div class="mes_gratis">30 dias gratis</div></div>
                             </form>
                         </div>
                     </div>
