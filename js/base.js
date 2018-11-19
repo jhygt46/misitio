@@ -8,6 +8,9 @@ var clientes = [{ logo: 'mika.jpg', nombre: 'Mika Sushi 01', url: 'www.mikasushi
 
 function render(){
     
+    $("input[name*='dominio']").val(localStorage.getItem("dominio"));
+    $("input[name*='correo']").val(localStorage.getItem("correo"));
+    
     var html = '';
     for(var i=0; i<clientes.length; i=i+4){
     
@@ -75,6 +78,9 @@ function send(){
 
     var dominio = $("input[name*='dominio']").val().split(".");
     var correo = $("input[name*='correo']").val();
+    
+    localStorage.setItem("dominio", dominio);
+    localStorage.setItem("correo", correo);
     
     if(validar_email(correo)){
         if(dominio[0] == "www" && dominio.length == 3 && dominio[1].length > 0 && dominio[2].length > 1){
