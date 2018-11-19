@@ -32,10 +32,10 @@
                             <form onsubmit="return send()" action="http://35.185.64.95/ajax/index.php" method="post">
                                 <h1>Crear tu Sitio Web para Delivery Ahora Mismo!</h1>
                                 <h2>Solo debes ingresar tus datos</h2>
-                                <?php if($_GET["tipo"] != 1){ ?><h3>Ingresa tu Dominio</h3><?php }else{ echo "<h3>".$_GET["error"]."</h3>"; } ?>
+                                <?php if($_GET["tipo"] != 1){ ?><h3>Ingresa tu Dominio</h3><?php }else{ echo "<h3 style='color: #f00'>".$_GET["error"]."</h3>"; } ?>
                                 <input type="hidden" name="accion" value="crear_dominio" />
                                 <div class="input"><input type="text" name="dominio" placeholder="www.izusushi.cl"></div>
-                                <?php if($_GET["tipo"] != 2){ ?><h3>Ingresa tu Correo</h3><?php }else{ echo "<h3>".$_GET["error"]."</h3>"; } ?>
+                                <?php if($_GET["tipo"] != 2){ ?><h3>Ingresa tu Correo</h3><?php }else{ echo "<h3 style='color: #f00'>".$_GET["error"]."</h3>"; } ?>
                                 <div class="input"><input type="text" name="correo" placeholder="izusushi@gmail.com"></div>
                                 <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
                                 <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" /><div class="mes_gratis">30 dias gratis</div></div>
