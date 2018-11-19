@@ -31,7 +31,7 @@
                             <?php if($_GET["realizado"] != 1){ ?>
                             <form onsubmit="return send()" action="http://35.185.64.95/ajax/index.php" method="post">
                                 <h1>Crear tu Sitio Web para Delivery Ahora Mismo!</h1>
-                                <h2>Solo debes seguir estos simples pasos</h2>
+                                <h2>Solo debes ingresar tus datos</h2>
                                 <h3>Ingresa tu Dominio</h3>
                                 <input type="hidden" name="accion" value="crear_dominio" />
                                 <div class="input"><input type="text" name="dominio" placeholder="www.izusushi.cl"></div>
@@ -42,7 +42,7 @@
                             </form>
                             <?php }else{ ?>
                             <h1>Felicitaciones! Tu cuenta ha sido creada</h1>
-                            <h2>Te hemos enviado un correo con las instruciones para ingresar</h2>
+                            <h2>Te hemos enviado un correo con las instruciones</h2>
                             <?php } ?>
                         </div>
                     </div>
