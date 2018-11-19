@@ -79,7 +79,7 @@ function validar_email(email){
 }
 function send(){
 
-    var dom = $("input[name*='dominio']").val().split(".");
+    var dom = $("input[name*='dominio']").val();
     var correo = $("input[name*='correo']").val();
     var dominio = dom.split(".");
     
