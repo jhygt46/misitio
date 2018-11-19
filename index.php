@@ -1,8 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>FireApp</title>
+    <title>MiSitioDelivery</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/anime.min.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
@@ -43,7 +42,7 @@
                             </form>
                             <?php }else{ ?>
                             <h1>Felicitaciones! Tu cuenta ha sido creada</h1>
-                            <h2>Te hemos enviado un correo</h2>
+                            <h2>Te hemos enviado un correo con las instruciones para ingresar</h2>
                             <?php } ?>
                         </div>
                     </div>
@@ -89,6 +88,8 @@
             <div class="iframe"><iframe id="telefono" src="http://www.mikasushi.cl" width="274" height="486" frameborder="0"></iframe></div>
         </div>
     </div>
+    <?php if($_GET["realizado"] != 1){ ?>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <?php } ?>
 </body>
 </html>
