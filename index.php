@@ -29,6 +29,7 @@
                 <div class="paginas pag01">
                     <div class="pagina">
                         <div class="infos inp1 valign">
+                            <?php if($_GET["realizado"] != 1){ ?>
                             <form onsubmit="return send()" action="http://35.185.64.95/ajax/index.php" method="post">
                                 <h1>Crear tu Sitio Web para Delivery Ahora Mismo!</h1>
                                 <h2>Solo debes seguir estos simples pasos</h2>
@@ -40,6 +41,9 @@
                                 <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
                                 <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" /><div class="mes_gratis">30 dias gratis</div></div>
                             </form>
+                            <?php }else{ ?>
+                            <h1>CREADO</h1>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
