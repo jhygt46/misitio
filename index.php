@@ -42,7 +42,8 @@
                                 <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" /><div class="mes_gratis">30 dias gratis</div></div>
                             </form>
                             <?php }else{ ?>
-                            <h1>CREADO</h1>
+                            <h1>Felicitaciones! Tu cuenta ha sido creada</h1>
+                            <h2>Te hemos enviado un correo</h2>
                             <?php } ?>
                         </div>
                     </div>
