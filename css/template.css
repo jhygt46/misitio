@@ -114,9 +114,9 @@ body{
     padding-top: 4px;
 }
 .contenedor .info .data .paginas .pagina .infos h6{
-    color: #fff;
-    font-size: 14px;
-    padding-top: 30px;
+    color: #f00;
+    font-size: 18px;
+    padding-top: 28px;
 }
 .contenedor .info .data .paginas .pagina .infos .input{
     width: 100%;
