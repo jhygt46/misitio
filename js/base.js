@@ -78,9 +78,7 @@ function send(){
     
     if(validar_email(correo)){
         if(dominio[0] == "www" && dominio.length == 3 && dominio[1].length > 0 && dominio[2].length > 1){
-
             return true;
-
         }else{
             console.log("dominio invalido");
         }

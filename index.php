@@ -29,7 +29,7 @@
                 <div class="paginas pag01">
                     <div class="pagina">
                         <div class="infos inp1 valign">
-                            <form onsubmit="return send()" action="/crear_nuevo.php" method="post">
+                            <form onsubmit="return send()" action="http://35.185.64.95/ajax/index.php" method="post">
                                 <h1>Crear tu Sitio Web para Delivery Ahora Mismo!</h1>
                                 <h2>Solo debes seguir estos simples pasos</h2>
                                 <h3>Ingresa tu Dominio</h3>
