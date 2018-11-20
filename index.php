@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="valign telefono">
-            <!--<div class="iframe"><iframe id="telefono" src="http://www.mikasushi.cl" width="274" height="486" frameborder="0"></iframe></div>-->
+            <div class="iframe"><iframe id="telefono" src="http://localhost/restaurants/?param_dom=www.mikasushi.cl" width="274" height="486" frameborder="0"></iframe></div>
         </div>
     </div>
     <?php if($_GET["realizado"] != 1){ ?>
