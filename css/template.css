@@ -3,7 +3,8 @@ html{
 }
 body{
     height: 100%;
-    background: url('../images/bg-dark.png') 50% 0 no-repeat;
+    /*background: url('../images/bg-dark.png') 50% 0 no-repeat;*/
+    background: #1F242C;
 }
 .contenedor{
     width: 100%;
