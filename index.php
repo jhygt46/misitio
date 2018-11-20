@@ -37,13 +37,14 @@
                                 <div class="input"><input type="text" name="dominio" placeholder="www.izusushi.cl" <?php if($_GET["tipo"] == 1){ echo"style='border: 1px solid #f00'"; } ?> /></div>
                                 <?php if($_GET["tipo"] != 2){ ?><h3>Ingresa tu Correo</h3><?php }else{ echo "<h3 style='color: #f00'>".$_GET["error"]."</h3>"; } ?>
                                 <div class="input"><input type="text" name="correo" placeholder="izusushi@gmail.com" <?php if($_GET["tipo"] == 2){ echo"style='border: 1px solid #f00'"; } ?> /></div>
-                                <?php if($_GET["tipo"] != 3){ ?><h6>reCAPTCHA</h6><?php }else{ ?><h6 style="color: #ff0"><?php echo $_GET["error"]; ?></h6><?php } ?>
+                                <?php if($_GET["tipo"] != 3){ ?><h6>reCAPTCHA</h6><?php }else{ ?><h6 style="color: #f00"><?php echo $_GET["error"]; ?></h6><?php } ?>
                                 <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
                                 <div class="acciones"><input type="submit" value="Empezar Prueba Gratis" class="empezar" /><div class="mes_gratis">30 dias gratis</div></div>
                             </form>
                             <?php }else{ ?>
-                            <h1>Felicitaciones! Tu cuenta ha sido creada</h1>
-                            <h2>Te hemos enviado un correo con las instruciones</h2>
+                            <h1 style="font-size: 70px">Felicitaciones!</h1>
+                            <h1 style="font-size: 41px">Tu cuenta ha sido creada</h1>
+                            <h2 style="padding-top: 40px">Te hemos enviado un correo con las instrucciones</h2>
                             <?php } ?>
                         </div>
                     </div>
