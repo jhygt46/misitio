@@ -3,7 +3,6 @@
     <title>MiSitioDelivery</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
-    <script type="text/javascript" src="js/anime.min.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Pattaya|Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" media="all" />
