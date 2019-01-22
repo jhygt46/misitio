@@ -69,11 +69,11 @@
         
         <div class="contenido p_contacto halign">
             <div class="cont_contenido">
-                <form onsubmit="return send()" action="http://35.185.64.95/ajax/index.php" method="post">
+                <form onsubmit="return send2()" action="http://35.185.64.95/ajax/index.php" method="post">
                     <h3>Nombre</h3>
                     <input type="hidden" name="accion" value="contacto" />
                     <div class="input">
-                        <input type="text" name="nombre" placeholder="Juan Perez"  />
+                        <input type="text" name="nombre" placeholder="Diego"  />
                     </div>
                     <h3>Correo</h3>
                     <div class="input">
@@ -81,11 +81,11 @@
                     </div>
                     <h3>Telefono</h3>
                     <div class="input">
-                        <input type="text" name="telefono" placeholder="+56 9 6616 6956"  />
+                        <input type="text" name="telefono" placeholder="+56 9 7518 3956"  />
                     </div>
                     <h3>Asunto</h3>
                     <div class="input">
-                        <TextArea style="width: 100%; height: 80px; padding: 10px">BUENA NELSON</TextArea>
+                        <TextArea name="Asunto" style="width: 100%; height: 80px; padding: 10px"></TextArea>
                     </div>
                     <h6>reCAPTCHA</h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
