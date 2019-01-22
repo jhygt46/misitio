@@ -1,6 +1,5 @@
 $(document).ready(function(){
     
-    render();
     var width = $('body').width();
     lugar(width, 0);
 
@@ -30,31 +29,7 @@ function lugar(w, aux){
 }
 var clientes = [{ logo: 'mika.jpg', nombre: 'Mika Sushi 01', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 02', url: 'www.runasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 03', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 04', url: 'www.mikasushi.cl' }, { logo: 'mika.jpg', nombre: 'Mika Sushi 05', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 06', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 07', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 08', url: 'www.mikasushi.cl' }, { logo: 'mika.jpg', nombre: 'Mika Sushi 09', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 10', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 11', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 12', url: 'www.mikasushi.cl' }];
 
-function render(){
-    
-    var dominio = localStorage.getItem("dominio");
-    var correo = localStorage.getItem("correo");
-    
-    $("input[name*='dominio']").val(dominio);
-    $("input[name*='correo']").val(correo);
-    
-    var html = '';
-    for(var i=0; i<clientes.length; i=i+4){
-    
-        html = '<div class="list_cli">'+
-                    '<ul class="clearfix">'+
-                        '<li onclick="iframe(\''+clientes[i].url+'\')"><div class="cliente valign"><div style="background: #fff"><img style="width: 100%" src="http://'+clientes[i].url+'/images/logos/'+clientes[i].url+'.jpg"></div><div>'+clientes[i].nombre+'</div></div></li>'+
-                        '<li onclick="iframe(\''+clientes[i+1].url+'\')"><div class="cliente valign"><div style="background: #000"><img style="width: 100%" src="http://'+clientes[i+1].url+'/images/logos/'+clientes[i+1].url+'.jpg"></div><div>'+clientes[i+1].nombre+'</div></div></li>'+
-                        '<li onclick="iframe(\''+clientes[i+2].url+'\')"><div class="cliente valign"><div style="background: #fff"><img style="width: 100%" src="http://'+clientes[i+2].url+'/images/logos/'+clientes[i+2].url+'.jpg"></div><div>'+clientes[i+2].nombre+'</div></div></li>'+
-                        '<li onclick="iframe(\''+clientes[i+3].url+'\')"><div class="cliente valign"><div style="background: #fff"><img style="width: 100%" src="http://'+clientes[i+3].url+'/images/logos/'+clientes[i+3].url+'.jpg"></div><div>'+clientes[i+3].nombre+'</div></div></li>'+
-                    '</ul>'+
-                '</div>';
-        
-        $('.cont_show').append(html);
-        
-    }
-    
-}
+
 function go_pagina(i){
     
     $('.contenido').hide();
@@ -99,9 +74,6 @@ function send(){
     var dom = $("input[name*='dominio']").val();
     var correo = $("input[name*='correo']").val();
     var dominio = dom.split(".");
-    
-    localStorage.setItem("dominio", dom);
-    localStorage.setItem("correo", correo);
     
     if(validar_email(correo)){
         if(dominio[0] == "www" && dominio.length == 3 && dominio[1].length > 0 && dominio[2].length > 1){

@@ -36,11 +36,11 @@
                     <h3>Ingresa tu Dominio</h3>
                     <input type="hidden" name="accion" value="crear_dominio" />
                     <div class="input">
-                        <input type="text" name="in_dominio" placeholder="www.tusitio.cl"  />
+                        <input type="text" name="dominio" placeholder="www.tusitio.cl"  />
                     </div>
                     <h3>Ingresa tu Correo</h3>
                     <div class="input">
-                        <input type="text" name="in_correo" placeholder="tucorreo@gmail.com"  />
+                        <input type="text" name="correo" placeholder="tucorreo@gmail.com"  />
                     </div>
                     <h6>reCAPTCHA</h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
