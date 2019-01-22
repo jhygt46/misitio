@@ -1,249 +1,208 @@
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
-body{
-    height: 100%;
-    /*background: url('../images/bg-dark.png') 50% 0 no-repeat;*/
-    background: #1F242C;
+html body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background: #1F242C;
 }
-.contenedor{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+html body .contenedor {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-.contenedor .telefono{
-    width: 310px;
-    height: 600px;
-    right: 40px;
-    background: url('../images/celular.png') 0 0 no-repeat;
+html body .contenedor .logo {
+  width: 270px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-size: 36px;
+  color: #fff;
 }
-.contenedor .telefono .iframe{
-    width: 274px;
-    height: 486px;
-    background: #fff;
-    margin: 59px 17px 51px 18px;
+html body .contenedor .cont_btns {
+  display: block;
+  width: 100%;
+  top: 60px;
+  position: absolute;
 }
-.contenedor .info{
-    left: 40px;
-    width: calc(100% - 410px);
-    height: 580px;
+html body .contenedor .cont_btns .botones {
+  width: 270px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
 }
-.contenedor .info .titulo{
-    display: block;
-    height: 65px;
-    position: relative;
+html body .contenedor .cont_btns .botones li {
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  width: 90px;
+  padding: 6px 0px;
 }
-.contenedor .info .titulo .logo{
-    left: 0px;
-    color: #fff;
-    font-size: 5em;
+html body .contenedor .cont_btns .botones li.selected {
+  background: #fee;
+  color: #f99;
 }
-.contenedor .info .titulo .btns{
-    color: #fff;
-    font-size: 24px;
-    right: 20px;
+html body .contenedor .contenido {
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+  overflow-y: auto;
 }
-.contenedor .info .titulo .btns li{
-    float: left;
-    padding-left: 40px;
+html body .contenedor .p_empezar {
+  max-width: 460px;
+  height: calc(100% - 140px);
+  top: 130px;
+  width: 94%;
+  left: 3%;
 }
-.contenedor .info .data{
-    display: block;
-    height: calc(100% - 65px);
-    position: relative;
+html body .contenedor .p_empezar .cont_contenido {
+  padding: 3%;
+  font-family: "Lato", sans-serif;
 }
-.contenedor .info .data .paginas{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.01);
-    display: block;
+html body .contenedor .p_empezar .cont_contenido h1 {
+  color: #fff;
+  font-size: 24px;
+  text-align: left;
 }
-.contenedor .info .data .pag01{
-    opacity: 1;
+html body .contenedor .p_empezar .cont_contenido h2 {
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
 }
-.contenedor .info .data .pag02{
-    opacity: 0;
-    top: 100%;
+html body .contenedor .p_empezar .cont_contenido form {
+  padding-top: 20px;
 }
-.contenedor .info .data .pag03{
-    opacity: 0;
-    top: 100%;
+html body .contenedor .p_empezar .cont_contenido form h3 {
+  font-size: 21px;
+  color: #fff;
+  padding-top: 10px;
 }
-.contenedor .info .data .paginas .pagina{
-    height: 100%;
-    position: relative;
+html body .contenedor .p_empezar .cont_contenido form .input {
+  width: 100%;
 }
-.contenedor .info .data .paginas  .pagina .infos{
-    font-family: 'Lato', sans-serif;
+html body .contenedor .p_empezar .cont_contenido form .input input {
+  width: 100%;
+  height: 44px;
+  padding: 6px;
 }
-.contenedor .info .data .paginas  .pagina .inp1{
-    width: 90%;
-    padding: 0 5%;
+html body .contenedor .p_empezar .cont_contenido form h6 {
+  font-size: 21px;
+  color: #fff;
+  padding-top: 18px;
 }
-.contenedor .info .data .paginas  .pagina .inp2{
-    width: 100%;
+html body .contenedor .p_empezar .cont_contenido form .acciones {
+  padding-top: 18px;
 }
-.contenedor .info .data .paginas .pagina .infos h1{
-    color: #fff;
-    font-size: 28px;
+html body .contenedor .p_empezar .cont_contenido form .acciones input {
+  width: 180px;
+  background: #900;
+  padding: 12px;
+  color: #fff;
+  border: 0px;
+  font-size: 14px;
 }
-.contenedor .info .data .paginas .pagina .infos .in2pad{
-    padding: 0 5%;
+html body .contenedor .p_empezar .cont_contenido form .acciones .mes_gratis {
+  font-size: 18px;
+  color: #fff;
+  padding-top: 4px;
 }
-.contenedor .info .data .paginas .pagina .infos h2{
-    color: #fff;
-    font-size: 20px;
-    padding-bottom: 20px;
-    padding-top: 6px;
+html body .contenedor .p_clientes {
+  height: calc(100% - 130px);
+  top: 120px;
+  display: none;
+  width: 94%;
+  left: 3%;
 }
-.contenedor .info .data .paginas .pagina .infos h3{
-    color: #fff;
-    font-size: 21px;
-    padding-top: 10px;
+html body .contenedor .p_clientes .cont_contenido {
+  padding: 0 2% 2% 2%;
+  font-family: "Lato", sans-serif;
 }
-.contenedor .info .data .paginas .pagina .infos h4{
-    color: #fff;
-    font-size: 17px;
-    padding-bottom: 14px;
-    padding-top: 6px;
+html body .contenedor .p_clientes .cont_contenido .lista_clientes {
+  max-width: 500px;
+  margin: 0 auto;
 }
-.contenedor .info .data .paginas .pagina .infos h5{
-    color: #fff;
-    font-size: 14px;
-    padding-top: 4px;
+html body .contenedor .p_clientes .cont_contenido .lista_clientes li {
+  margin-bottom: 4px;
+  height: 100px;
+  background: #f99;
+  position: relative;
 }
-.contenedor .info .data .paginas .pagina .infos h6{
-    color: #fff;
-    font-size: 21px;
-    padding-top: 18px;
+html body .contenedor .p_clientes .cont_contenido .lista_clientes li .foto {
+  position: absolute;
+  width: 146px;
+  top: 2px;
+  left: 2px;
+  background: #faa;
+  height: 96px;
 }
-.contenedor .info .data .paginas .pagina .infos .input{
-    width: 100%;
+html body .contenedor .p_clientes .cont_contenido .lista_clientes li .info {
+  width: calc(100% - 152px);
+  position: absolute;
+  left: 150px;
+  top: 2px;
+  background: #fbb;
+  height: 96px;
 }
-.contenedor .info .data .paginas .pagina .infos .g-recaptcha{
-    
+html body .contenedor .p_contacto {
+  max-width: 500px;
+  height: calc(100% - 140px);
+  top: 130px;
+  width: 94%;
+  display: none;
 }
-.contenedor .info .data .paginas .pagina .infos .input input{
-    width: 45%;
-    height: 44px;
-    padding: 6px;
+html body .contenedor .p_contacto .cont_contenido {
+  padding: 0 3% 3% 3%;
+  font-family: "Lato", sans-serif;
 }
-.contenedor .info .data .paginas .pagina .infos .input2{
-    width: 100%;
+html body .contenedor .p_contacto .cont_contenido h1 {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
 }
-.contenedor .info .data .paginas .pagina .infos .input2 input{
-    width: 45%;
-    height: 34px;
-    padding: 6px;
+html body .contenedor .p_contacto .cont_contenido h2 {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
 }
-.contenedor .info .data .paginas .pagina .infos .input2 textarea{
-    width: 45%;
-    height: 80px;
+html body .contenedor .p_contacto .cont_contenido form h3 {
+  font-size: 18px;
+  color: #fff;
+  padding-top: 8px;
 }
-.contenedor .info .data .paginas .pagina .infos .enviar_contacto{
-    display: block;
-    margin-top: 25px;
-    position: relative;
-    width: 35%;
+html body .contenedor .p_contacto .cont_contenido form .input {
+  width: 100%;
 }
-.contenedor .info .data .paginas .pagina .infos .enviar_contacto div{
-    background: #121518;
-    padding: 10px 0px;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    display: block;
+html body .contenedor .p_contacto .cont_contenido form .input input {
+  width: 100%;
+  height: 36px;
+  padding: 6px;
 }
-.contenedor .info .data .paginas .pagina .infos .acciones{
-    height: 46px;
-    margin-top: 35px;
-    position: relative;
+html body .contenedor .p_contacto .cont_contenido form h6 {
+  font-size: 21px;
+  color: #fff;
+  padding-top: 8px;
 }
-.contenedor .info .data .paginas .pagina .infos .lista_clientes{
-    width: 100%;
-    height: 380px;
+html body .contenedor .p_contacto .cont_contenido form .acciones {
+  padding-top: 18px;
 }
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .preview{
-    width: 6%;
-    height: 100%;
-    float: left;
-    background: url('../images/prev.png') 50% 50% no-repeat;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .show{
-    width: 88%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .cont_show{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .cont_show .list_cli{
-    width: 100%;
-    height: 100%;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .cont_show .list_cli ul{
-    
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .cont_show .list_cli ul li{
-    width: 25%;
-    float: left;
-    height: 100%;
-    position: relative;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .cont_show .list_cli ul li .cliente{
-    width: 98%;
-    padding: 0 1%;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .cont_show .list_cli ul li .cliente div:nth-child(1){
-    background: #ff0;
-    height: 150px;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .cont_show .list_cli ul li .cliente div:nth-child(2){
-    padding-top: 4px;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-}
-.contenedor .info .data .paginas .pagina .infos .lista_clientes .next{
-    width: 6%;
-    height: 100%;
-    float: left;
-    background: url('../images/next.png') 50% 50% no-repeat;
-}
-.contenedor .info .data .paginas .pagina .infos .acciones .mes_gratis{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    color: #fff;
-    font-size: 50px;
-    font-family: 'Pattaya', sans-serif;
-}
-.contenedor .info .data .paginas .pagina .infos .acciones .empezar{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    color: #fcc;
-    font-size: 22px;
-    background: #f00;
-    width: 45%;
-    padding: 16px 0px;
-    text-align: center;
-    border: 0px;
+html body .contenedor .p_contacto .cont_contenido form .acciones input {
+  width: 180px;
+  background: #900;
+  padding: 12px;
+  color: #fff;
+  border: 0px;
+  font-size: 14px;
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-    height: 0px;
+@media only screen and (min-width: 800px) {
+  html body .contenedor .telefono {
+    display: none;
+  }
 }
-::-webkit-scrollbar-track-piece {
-    background: #eee
+@media only screen and (max-width: 800px) {
+  html body .contenedor .telefono {
+    display: none;
+  }
 }
-::-webkit-scrollbar-thumb {
-    background: #888
-}
+
+/*# sourceMappingURL=template.css.map */

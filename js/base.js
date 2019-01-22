@@ -1,9 +1,33 @@
 $(document).ready(function(){
     
     render();
+    var width = $('body').width();
+    lugar(width, 0);
 
 });
-
+window.onresize = function() {
+    var width = $('body').width();
+    lugar(width, 1);
+}
+function lugar(w, aux){
+    
+    var l1 = 0;
+    var l2 = 0;
+    
+    if(w > 800){
+        
+        l1 = (w - 780)/2;
+        l2 = l1 + 470;
+        $('.telefono').show();
+        $('.telefono').css({left: l2+'px'});
+        $('.p_empezar').css({left: l1+'px'});
+        if(aux == 0){ $('.telefono').show() }
+    
+    }else{
+        $('.telefono').hide();
+    }
+    
+}
 var clientes = [{ logo: 'mika.jpg', nombre: 'Mika Sushi 01', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 02', url: 'www.runasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 03', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 04', url: 'www.mikasushi.cl' }, { logo: 'mika.jpg', nombre: 'Mika Sushi 05', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 06', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 07', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 08', url: 'www.mikasushi.cl' }, { logo: 'mika.jpg', nombre: 'Mika Sushi 09', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 10', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 11', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 12', url: 'www.mikasushi.cl' }];
 
 function render(){
@@ -31,26 +55,19 @@ function render(){
     }
     
 }
-function pagina(n){
+function go_pagina(i){
     
-    var velocidad = 700;
-    var distancia = 100;
-    
-    if(n == 0){
-        $('.pag01').animate({ opacity: 1, top: '0px' }, velocidad);
-        $('.pag02').animate({ opacity: 0, top: distancia+'%' }, velocidad);
-        $('.pag03').animate({ opacity: 0, top: distancia+'%' }, velocidad);
-    }
-    if(n == 1){
-        $('.pag01').animate({ opacity: 0, top: distancia+'%' }, velocidad);
-        $('.pag02').animate({ opacity: 1, top: '0px' }, velocidad);
-        $('.pag03').animate({ opacity: 0, top: distancia+'%' }, velocidad);
-    }
-    if(n == 2){
-        $('.pag01').animate({ opacity: 0, top: distancia+'%' }, velocidad);
-        $('.pag02').animate({ opacity: 0, top: distancia+'%' }, velocidad);
-        $('.pag03').animate({ opacity: 1, top: '0px' }, velocidad);
-    }    
+    $('.contenido').hide();
+    $('.botones').find('li').each(function(a){
+        if(i == a){
+            $(this).addClass('selected');
+        }else{
+            $(this).removeClass('selected');
+        }
+    });
+    if(i == 0){ $('.p_empezar').show(); $('.telefono').show() }
+    if(i == 1){ $('.p_clientes').show(); $('.telefono').hide() }
+    if(i == 2){ $('.p_contacto').show(); $('.telefono').hide() }
     
 }
 function preview_cliente(){
