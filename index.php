@@ -73,15 +73,15 @@
                     <h3>Nombre</h3>
                     <input type="hidden" name="accion" value="contacto" />
                     <div class="input">
-                        <input type="text" name="dominio" placeholder="www.izusushi.cl"  />
+                        <input type="text" name="nombre" placeholder="Juan Perez"  />
                     </div>
                     <h3>Correo</h3>
                     <div class="input">
-                        <input type="text" name="correo" placeholder="izusushi@gmail.com"  />
+                        <input type="text" name="correo" placeholder="tucorreo@gmail.com"  />
                     </div>
                     <h3>Telefono</h3>
                     <div class="input">
-                        <input type="text" name="correo" placeholder="izusushi@gmail.com"  />
+                        <input type="text" name="telefono" placeholder="+56 9 6616 6956"  />
                     </div>
                     <h3>Asunto</h3>
                     <div class="input">
