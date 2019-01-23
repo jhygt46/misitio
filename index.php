@@ -79,19 +79,19 @@
                     <h3>Nombre</h3>
                     <input type="hidden" name="accion" value="contacto" />
                     <div class="input">
-                        <input type="text" name="nombre" placeholder="Diego"  />
+                        <input type="text" name="contacto_nombre" placeholder="Diego"  />
                     </div>
                     <h3>Correo</h3>
                     <div class="input">
-                        <input type="text" name="correo" placeholder="tucorreo@gmail.com"  />
+                        <input type="text" name="contacto_correo" placeholder="tucorreo@gmail.com"  />
                     </div>
                     <h3>Telefono</h3>
                     <div class="input">
-                        <input type="text" name="telefono" placeholder="+56 9 7518 3956"  />
+                        <input type="text" name="contacto_telefono" placeholder="+56 9 7518 3956"  />
                     </div>
                     <h3>Asunto</h3>
                     <div class="input">
-                        <TextArea name="Asunto" style="width: 100%; height: 80px; padding: 10px"></TextArea>
+                        <TextArea class="contacto_sunto" style="width: 100%; height: 80px; padding: 10px"></TextArea>
                     </div>
                     <h6>reCAPTCHA</h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
