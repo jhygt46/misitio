@@ -88,6 +88,31 @@ function send(){
     return false;
     
 }
+function send2(){
+
+    var nombre = $("input[name*='nombre']").val();
+    var correo = $("input[name*='correo']").val();
+    var telefono = $("input[name*='telefono']").val();
+    var asunto = $(".asunto").val();
+
+    console.log(nombre);
+    console.log(correo);
+    console.log(telefono);
+    console.log(asunto);
+    
+    if(validar_email(correo)){
+        if(nombre != "" && telefono != "" && asunto != ""){
+            return true;
+        }else{
+            console.log("dominio invalido");
+        }
+    }else{
+        console.log("correo invalido");
+    }
+    
+    return false;
+    
+}
 function a(){
     return null;
 }
