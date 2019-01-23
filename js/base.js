@@ -90,18 +90,12 @@ function send(){
 }
 function send2(){
 
-    var nombre = $("input[name*='contacto_nombre']").val();
-    var correo = $("input[name*='contacto_correo']").val();
-    var telefono = $("input[name*='contacto_telefono']").val();
-    var asunto = $(".contacto_asunto").val();
-
-    console.log(nombre);
-    console.log(correo);
-    console.log(telefono);
-    console.log(asunto);
+    var nombre = $("input[name*='nombre']").val();
+    var correo = $("input[name*='email']").val();
+    var telefono = $("input[name*='telefono']").val();
     
     if(validar_email(correo)){
-        if(nombre != "" && telefono != "" && asunto != ""){
+        if(nombre != "" && telefono != "+569"){
             return true;
         }else{
             console.log("dominio invalido");
