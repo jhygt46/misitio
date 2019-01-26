@@ -70,7 +70,7 @@
             </div>
         </div>
         
-        <div class="telefono" style="width: 273px; height: 530px; position: absolute; top: 120px; background: url('images/celular.png')"><iframe style="width: 273px; height: 530px" src="https://www.mikasushi.cl"></iframe></div>
+        <div class="telefono" style="width: 273px; height: 530px; position: absolute; top: 120px; background: url('images/celular.png')"><iframe style="width: 273px; height: 530px" src="http://www.mikasushi.cl"></iframe></div>
         
         <div class="contenido p_clientes">
             <div class="cont_contenido">
