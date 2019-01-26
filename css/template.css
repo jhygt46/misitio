@@ -124,7 +124,7 @@ html body .contenedor .p_clientes .cont_contenido .lista_clientes {
 html body .contenedor .p_clientes .cont_contenido .lista_clientes li {
   margin-bottom: 4px;
   height: 100px;
-  background: #f99;
+  background: #ddd;
   position: relative;
 }
 html body .contenedor .p_clientes .cont_contenido .lista_clientes li .foto {
@@ -143,8 +143,9 @@ html body .contenedor .p_clientes .cont_contenido .lista_clientes li .info {
   position: absolute;
   left: 150px;
   top: 2px;
-  background: #fbb;
-  height: 96px;
+  height: 81px;
+  font-size: 32px;
+  padding-top: 15px;
 }
 html body .contenedor .p_contacto {
   max-width: 500px;

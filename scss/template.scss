@@ -118,7 +118,7 @@ html {
                         li{
                             margin-bottom: 4px;
                             height: 100px;
-                            background: #f99;
+                            background: #ddd;
                             position: relative;
                             .foto{
                                 position: absolute;
@@ -136,8 +136,9 @@ html {
                                 position: absolute;
                                 left: 150px;
                                 top: 2px;
-                                background: #fbb;
-                                height: 96px;
+                                height: 81px;
+                                font-size: 32px;
+                                padding-top: 15px;
                             }
                         }
                     }
