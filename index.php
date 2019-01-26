@@ -34,14 +34,14 @@
                 <h1>Crear tu Sitio Ahora Mismo!</h1>
                 <h2>Ingresando s&oacute;lo 2 simples datos</h2>
                 <form onsubmit="return send()" action="http://35.185.64.95/ajax/index.php" method="post">
-                    <h3>Ingresa tu Dominio</h3>
+                    <h3><?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 1){ echo $_GET['error']; }else{ echo "Ingresa tu Dominio"; } ?></h3>
                     <input type="hidden" name="accion" value="crear_dominio" />
                     <div class="input">
-                        <input type="text" name="dominio" placeholder="www.tusitio.cl" <?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 1){ echo "style='border: 2px solid #933; background: #fee'"; } ?> />
+                        <input type="text" name="dominio" placeholder="www.tusitio.cl" <?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 1){ echo "style='border: 2px solid #933; background: #fdd'"; } ?> />
                     </div>
-                    <h3>Ingresa tu Correo</h3>
+                    <h3><?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 2){ echo $_GET['error']; }else{ echo "Ingresa tu Correo"; } ?></h3>
                     <div class="input">
-                        <input type="text" name="correo" placeholder="tucorreo@gmail.com" <?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 2){ echo "style='border: 2px solid #933; background: #fee'"; } ?> />
+                        <input type="text" name="correo" placeholder="tucorreo@gmail.com" <?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 2){ echo "style='border: 2px solid #933; background: #fdd'"; } ?> />
                     </div>
                     <h6>reCAPTCHA</h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
