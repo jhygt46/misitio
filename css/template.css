@@ -140,13 +140,13 @@ html body .contenedor .p_clientes .cont_contenido .lista_clientes li .foto img {
   max-width: 100%;
 }
 html body .contenedor .p_clientes .cont_contenido .lista_clientes li .info {
-  width: calc(100% - 152px);
+  width: calc(100% - 157px);
   position: absolute;
-  left: 150px;
+  left: 155px;
   top: 2px;
   height: 81px;
   font-size: 32px;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 html body .contenedor .p_contacto {
   max-width: 500px;
