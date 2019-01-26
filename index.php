@@ -102,7 +102,7 @@
                     </div>
                 </form>
                 <?php } ?>
-                <?php if($_GET["realizado"] == 1){ ?>
+                <?php if($_GET["contacto"] == 1){ ?>
                     <h1 style="padding-top: 40px; font-size: 60px">Felicitaciones!</h1>
                     <h1 style="font-size: 35px">Tu cuenta ha sido creada</h1>
                     <h2 style="font-size: 18px">Te hemos enviado un correo con las instrucciones</h2>
