@@ -73,7 +73,7 @@
         <div class="telefono" style="width: 273px; height: 530px; position: absolute; top: 120px">
             <div style="width: 100%; height: 100%; position: relative">
                 <img style="position: absolute; z-index: 1; width: 273px; height: 530px" src="images/celular.png" alt="" />
-                <iframe style="position: absolute; z-index: 2; width: 273px; height: 530px; border: 0px; padding: 0px 0px 0px 0px" src="http://www.mikasushi.cl"></iframe>
+                <iframe style="position: absolute; z-index: 2; width: 245px; height: 430px; border: 0px; padding: 52px 14px 0px 14px" src="http://www.mikasushi.cl"></iframe>
             </div>
         </div>
         
