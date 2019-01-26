@@ -43,7 +43,7 @@
                     <div class="input">
                         <input type="text" name="correo" placeholder="tucorreo@gmail.com" <?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 2){ echo "style='border: 2px solid #933; background: #fdd'"; } ?> />
                     </div>
-                    <h6>reCAPTCHA</h6>
+                    <h6><?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 3){ echo "<p style='color: #f00'>".$_GET['error']."</p>"; }else{ echo "reCAPTCHA"; } ?></h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
                     <div class="acciones">
                         <input type="submit" value="Empezar Prueba Gratis" class="empezar" />
