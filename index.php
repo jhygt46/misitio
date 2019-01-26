@@ -83,9 +83,9 @@
                     <div class="input">
                         <input type="text" name="nombre" placeholder="Diego" />
                     </div>
-                    <h3><?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 1){ echo "<p style='color: #f00'>".$_GET['error']."</p>"; }else{ echo "Correo"; } ?></h3>
+                    <h3><?php if(isset($_GET["contacto"]) && $_GET["contacto"] == 0 && $_GET["tipo"] == 1){ echo "<p style='color: #f00'>".$_GET['error']."</p>"; }else{ echo "Correo"; } ?></h3>
                     <div class="input">
-                        <input type="text" name="email" placeholder="tucorreo@gmail.com" <?php if($_GET["contacto"] == 0 && $_GET["tipo"] == 1){ echo "style='border: 2px solid #933; background: #fdd'"; } ?> />
+                        <input type="text" name="email" placeholder="tucorreo@gmail.com" <?php if(isset($_GET["contacto"]) && $_GET["contacto"] == 0 && $_GET["tipo"] == 1){ echo "style='border: 2px solid #933; background: #fdd'"; } ?> />
                     </div>
                     <h3>Telefono</h3>
                     <div class="input">
@@ -95,7 +95,7 @@
                     <div class="input">
                         <TextArea name="asunto" style="width: 100%; height: 80px; padding: 10px"></TextArea>
                     </div>
-                    <h6>reCAPTCHA</h6>
+                    <h6><?php if(isset($_GET["contacto"]) && $_GET["realizado"] == 0 && $_GET["tipo"] == 3){ echo "<p style='color: #f00'>".$_GET['error']."</p>"; }else{ echo "reCAPTCHA"; } ?></h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
                     <div class="acciones">
                         <input type="submit" value="Enviar Solicitud" class="empezar" />
