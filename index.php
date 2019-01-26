@@ -76,15 +76,16 @@
         
         <div class="contenido p_contacto halign">
             <div class="cont_contenido">
+                <?php if($_GET["contacto"] == 0 || !isset($_GET["contacto"])){ ?>
                 <form onsubmit="return send2()" action="http://35.185.64.95/ajax/index.php" method="post">
                     <h3>Nombre</h3>
                     <input type="hidden" name="accion" value="enviar_contacto" />
                     <div class="input">
                         <input type="text" name="nombre" placeholder="Diego" />
                     </div>
-                    <h3>Correo</h3>
+                    <h3><?php if($_GET["realizado"] == 0 && $_GET["tipo"] == 1){ echo "<p style='color: #f00'>".$_GET['error']."</p>"; }else{ echo "Correo"; } ?></h3>
                     <div class="input">
-                        <input type="text" name="email" placeholder="tucorreo@gmail.com" />
+                        <input type="text" name="email" placeholder="tucorreo@gmail.com" <?php if($_GET["contacto"] == 0 && $_GET["tipo"] == 1){ echo "style='border: 2px solid #933; background: #fdd'"; } ?> />
                     </div>
                     <h3>Telefono</h3>
                     <div class="input">
@@ -100,6 +101,7 @@
                         <input type="submit" value="Enviar Solicitud" class="empezar" />
                     </div>
                 </form>
+                <?php } ?>
             </div>
         </div>
         <!--
