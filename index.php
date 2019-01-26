@@ -70,9 +70,11 @@
             </div>
         </div>
         
-        <div class="telefono" style="width: 273px; height: 530px; position: absolute; top: 120px; position: relative">
-            <img style="position: absolute; z-index: 2; width: 273px; height: 530px" src="images/celular.png" alt="" />
-            <iframe style="position: absolute; z-index: 1; width: 253px; height: 510px; border: 0px; padding: 10px" src="http://www.mikasushi.cl"></iframe>
+        <div class="telefono" style="width: 273px; height: 530px; position: absolute; top: 120px">
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="position: absolute; z-index: 2; width: 273px; height: 530px" src="images/celular.png" alt="" />
+                <iframe style="position: absolute; z-index: 1; width: 253px; height: 510px; border: 0px; padding: 10px" src="http://www.mikasushi.cl"></iframe>
+            </div>
         </div>
         
         <div class="contenido p_clientes">
