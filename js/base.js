@@ -21,6 +21,7 @@ function lugar(w, aux){
         $('.telefono').css({left: l2+'px'});
         $('.p_empezar').css({left: l1+'px'});
         if(aux == 0){ $('.telefono').show() }
+        telefono = 1;
     
     }else{
         $('.telefono').hide();
@@ -28,7 +29,7 @@ function lugar(w, aux){
     
 }
 var clientes = [{ logo: 'mika.jpg', nombre: 'Mika Sushi 01', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 02', url: 'www.runasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 03', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 04', url: 'www.mikasushi.cl' }, { logo: 'mika.jpg', nombre: 'Mika Sushi 05', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 06', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 07', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 08', url: 'www.mikasushi.cl' }, { logo: 'mika.jpg', nombre: 'Mika Sushi 09', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 10', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 11', url: 'www.mikasushi.cl' }, { logo: 'runa.jpg', nombre: 'Runa Sushi 12', url: 'www.mikasushi.cl' }];
-
+var telefono = false;
 
 function go_pagina(i){
     
@@ -40,9 +41,9 @@ function go_pagina(i){
             $(this).removeClass('selected');
         }
     });
-    if(i == 0){ $('.p_empezar').show(); $('.telefono').show() }
-    if(i == 1){ $('.p_clientes').show(); $('.telefono').hide() }
-    if(i == 2){ $('.p_contacto').show(); $('.telefono').hide() }
+    if(i == 0 && telefono){ $('.p_empezar').show(); $('.telefono').show() }
+    if(i == 1 && telefono){ $('.p_clientes').show(); $('.telefono').hide() }
+    if(i == 2 && telefono){ $('.p_contacto').show(); $('.telefono').hide() }
     
 }
 function preview_cliente(){

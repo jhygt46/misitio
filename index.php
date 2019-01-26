@@ -28,7 +28,7 @@
             </ul>
         </div>
         
-        <div class="contenido p_empezar">
+        <div class="contenido p_empezar" <?php if($_GET["contacto"] == 1){ echo "style='display: none'"; } ?>>
             <div class="cont_contenido">
                 <?php if($_GET["realizado"] == 0 || !isset($_GET["realizado"])){ ?>
                 <h1>Crear tu Sitio Ahora Mismo!</h1>
@@ -74,7 +74,7 @@
             </div>
         </div>
         
-        <div class="contenido p_contacto halign">
+        <div class="contenido p_contacto halign" <?php if($_GET["contacto"] == 1){ echo "style='display: block'"; } ?>>
             <div class="cont_contenido">
                 <?php if($_GET["contacto"] == 0 || !isset($_GET["contacto"])){ ?>
                 <form onsubmit="return send2()" action="http://35.185.64.95/ajax/index.php" method="post">
