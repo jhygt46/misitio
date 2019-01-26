@@ -66,7 +66,7 @@
                 <ul class="lista_clientes">
                     <?php for($i=0; $i<10; $i++){ ?>
                     <li>
-                        <div class="foto"></div>
+                        <div class="foto"><img src="http://www.mikasushi.cl/images/logos/www.mikasushi.cl.jpg" alt="" /></div>
                         <div class="info"></div>
                     </li>
                     <?php } ?>
