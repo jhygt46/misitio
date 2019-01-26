@@ -74,8 +74,8 @@
             <div class="cont_contenido">
                 <ul class="lista_clientes"> 
                     <?php for($i=0; $i<count($list); $i++){ ?>
-                    <li style="background: <?php echo $list[$i]['back']; ?>">
-                        <div class="foto"><img src="<?php echo $list[$i]['img']; ?>" alt="" /></div>
+                    <li>
+                        <div style="background: <?php echo $list[$i]['back']; ?>" class="foto"><img src="<?php echo $list[$i]['img']; ?>" alt="" /></div>
                         <div class="info"><?php echo $list[$i]['nombre']; ?></div>
                     </li>
                     <?php } ?>
