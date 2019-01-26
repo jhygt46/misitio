@@ -22,9 +22,10 @@ function lugar(w, aux){
         $('.p_empezar').css({left: l1+'px'});
         if(aux == 0){ $('.telefono').show() }
         telefono = 1;
-    
+        
     }else{
         $('.telefono').hide();
+        telefono = 0;
     }
     
 }
