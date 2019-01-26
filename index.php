@@ -30,7 +30,7 @@
         
         <div class="contenido p_empezar">
             <div class="cont_contenido">
-                <?php if($_GET["realizado"] != 1){ ?>
+                <?php if($_GET["realizado"] == 0 || !isset($_GET["realizado"])){ ?>
                 <h1>Crear tu Sitio Ahora Mismo!</h1>
                 <h2>Ingresando s&oacute;lo 2 simples datos</h2>
                 <form onsubmit="return send()" action="http://35.185.64.95/ajax/index.php" method="post">
@@ -50,7 +50,8 @@
                         <div class="mes_gratis">30 dias gratis</div>
                     </div>
                 </form>
-                <?php }else{ ?>
+                <?php } ?>
+                <?php if($_GET["realizado"] == 1){ ?>
                     <h1 style="padding-top: 40px; font-size: 60px">Felicitaciones!</h1>
                     <h1 style="font-size: 35px">Tu cuenta ha sido creada</h1>
                     <h2 style="font-size: 18px">Te hemos enviado un correo con las instrucciones</h2>
