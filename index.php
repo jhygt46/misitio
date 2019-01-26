@@ -70,7 +70,7 @@
             </div>
         </div>
         
-        <div class="telefono" style="width: 310px; height: 530px; background: #ff0; position: absolute; top: 120px"><img src="images/celular.png" alt="" /></div>
+        <div class="telefono" style="width: 273px; height: 530px; position: absolute; top: 120px"><img src="images/celular.png" alt="" /></div>
         
         <div class="contenido p_clientes">
             <div class="cont_contenido">
