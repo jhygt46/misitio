@@ -95,7 +95,7 @@
                     <div class="input">
                         <TextArea name="asunto" style="width: 100%; height: 80px; padding: 10px"></TextArea>
                     </div>
-                    <h6><?php if(isset($_GET["contacto"]) && $_GET["realizado"] == 0 && $_GET["tipo"] == 3){ echo "<p style='color: #f00'>".$_GET['error']."</p>"; }else{ echo "reCAPTCHA"; } ?></h6>
+                    <h6><?php if(isset($_GET["contacto"]) && $_GET["contacto"] == 0 && $_GET["tipo"] == 2){ echo "<p style='color: #f00'>".$_GET['error']."</p>"; }else{ echo "reCAPTCHA"; } ?></h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
                     <div class="acciones">
                         <input type="submit" value="Enviar Solicitud" class="empezar" />
