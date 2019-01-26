@@ -37,11 +37,11 @@
                     <h3>Ingresa tu Dominio</h3>
                     <input type="hidden" name="accion" value="crear_dominio" />
                     <div class="input">
-                        <input type="text" name="dominio" placeholder="www.tusitio.cl" <?php if($_GET["realizado"] == 0 || $_GET["tipo"] == 0){ echo "style='border: 1px solid #c66'"; } ?> />
+                        <input type="text" name="dominio" placeholder="www.tusitio.cl" <?php if($_GET["realizado"] == 0 || $_GET["tipo"] == 1){ echo "style='border: 1px solid #c66'"; } ?> />
                     </div>
                     <h3>Ingresa tu Correo</h3>
                     <div class="input">
-                        <input type="text" name="correo" placeholder="tucorreo@gmail.com" <?php if($_GET["realizado"] == 0 || $_GET["tipo"] == 1){ echo "style='border: 1px solid #c66'"; } ?> />
+                        <input type="text" name="correo" placeholder="tucorreo@gmail.com" <?php if($_GET["realizado"] == 0 || $_GET["tipo"] == 2){ echo "style='border: 1px solid #c66'"; } ?> />
                     </div>
                     <h6>reCAPTCHA</h6>
                     <div class="g-recaptcha" data-sitekey="6Lf8j3sUAAAAAFEPARLhuiWamomIvm35UBCqf65R"></div>
