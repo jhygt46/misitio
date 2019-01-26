@@ -41,9 +41,9 @@ function go_pagina(i){
             $(this).removeClass('selected');
         }
     });
-    if(i == 0 && telefono){ $('.p_empezar').show(); $('.telefono').show() }
-    if(i == 1 && telefono){ $('.p_clientes').show(); $('.telefono').hide() }
-    if(i == 2 && telefono){ $('.p_contacto').show(); $('.telefono').hide() }
+    if(i == 0){ $('.p_empezar').show(); if(telefono){ $('.telefono').show() } }
+    if(i == 1){ $('.p_clientes').show(); $('.telefono').hide() }
+    if(i == 2){ $('.p_contacto').show(); $('.telefono').hide() }
     
 }
 function preview_cliente(){
