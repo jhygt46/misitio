@@ -1,3 +1,12 @@
+<?php 
+    $list[0]['back'] = "#fff";
+    $list[0]['img'] = "http://www.mikasushi.cl/images/logos/www.mikasushi.cl.jpg";
+    $list[0]['nombre'] = "MikaSushi";
+    
+    $list[1]['back'] = "#fff";
+    $list[1]['img'] = "http://www.mikasushi.cl/images/logos/www.mikasushi.cl.jpg";
+    $list[1]['nombre'] = "MikaSushi";
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>MiSitioDelivery</title>
@@ -63,11 +72,11 @@
         
         <div class="contenido p_clientes">
             <div class="cont_contenido">
-                <ul class="lista_clientes">
-                    <?php for($i=0; $i<10; $i++){ ?>
-                    <li>
-                        <div class="foto"><img src="http://www.mikasushi.cl/images/logos/www.mikasushi.cl.jpg" alt="" /></div>
-                        <div class="info"></div>
+                <ul class="lista_clientes"> 
+                    <?php for($i=0; $i<count($list); $i++){ ?>
+                    <li style="background: <?php echo $list[$i]['back']; ?>">
+                        <div class="foto"><img src="<?php echo $list[$i]['img']; ?>" alt="" /></div>
+                        <div class="info"><?php echo $list[$i]['nombre']; ?></div>
                     </li>
                     <?php } ?>
                 </ul>

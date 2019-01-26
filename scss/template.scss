@@ -125,8 +125,11 @@ html {
                                 width: 146px;
                                 top: 2px;
                                 left: 2px;
-                                background: #faa;
+                                text-align: center;
                                 height: 96px;
+                                img{
+                                    height: 100%;
+                                }
                             }
                             .info{
                                 width: calc(100% - 152px);

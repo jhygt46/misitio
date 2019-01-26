@@ -132,8 +132,11 @@ html body .contenedor .p_clientes .cont_contenido .lista_clientes li .foto {
   width: 146px;
   top: 2px;
   left: 2px;
-  background: #faa;
+  text-align: center;
   height: 96px;
+}
+html body .contenedor .p_clientes .cont_contenido .lista_clientes li .foto img {
+  height: 100%;
 }
 html body .contenedor .p_clientes .cont_contenido .lista_clientes li .info {
   width: calc(100% - 152px);
