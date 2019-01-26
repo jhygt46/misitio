@@ -137,6 +137,7 @@ html body .contenedor .p_clientes .cont_contenido .lista_clientes li .foto {
 }
 html body .contenedor .p_clientes .cont_contenido .lista_clientes li .foto img {
   height: 100%;
+  max-width: 100%;
 }
 html body .contenedor .p_clientes .cont_contenido .lista_clientes li .info {
   width: calc(100% - 152px);
