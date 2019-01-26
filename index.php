@@ -22,9 +22,9 @@
         <div class="logo">MiSitioDelivery.cl</div>
         <div class="cont_btns">
             <ul class="botones clearfix">
-                <li onclick="go_pagina(0)" class="selected">Empezar</li>
+                <li onclick="go_pagina(0)" <?php if(!isset($_GET["contacto"])){ echo "class='selected'"; } ?>>Empezar</li>
                 <li onclick="go_pagina(1)">Clientes</li>
-                <li onclick="go_pagina(2)">Contacto</li>
+                <li onclick="go_pagina(2)" <?php if(isset($_GET["contacto"])){ echo "class='selected'"; } ?>>Contacto</li>
             </ul>
         </div>
         
