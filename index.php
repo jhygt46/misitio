@@ -3,9 +3,9 @@
     $list[0]['img'] = "http://www.mikasushi.cl/images/logos/www.mikasushi.cl.jpg";
     $list[0]['nombre'] = "MikaSushi";
     
-    $list[1]['back'] = "#fff";
-    $list[1]['img'] = "http://www.mikasushi.cl/images/logos/www.mikasushi.cl.jpg";
-    $list[1]['nombre'] = "MikaSushi";
+    $list[1]['back'] = "#000";
+    $list[1]['img'] = "http://www.runasushi.cl/images/logos/www.runasushi.cl.jpg";
+    $list[1]['nombre'] = "RunaSushi";
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
